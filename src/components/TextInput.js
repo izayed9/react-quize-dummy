@@ -1,0 +1,10 @@
+import React from "react";
+import classes from "../styles/TextInput.module.css";
+export const TextInput = ({ icon, ...rest }) => {
+  return (
+    <div classNameLogin={classes.textInput}>
+      <input {...rest} />
+      <span className="material-icons-outlined"> {icon} </span>
+    </div>
+  );
+};
